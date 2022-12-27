@@ -24,7 +24,7 @@ class User extends CI_Controller
 
             ];
             $this->User_model->create($formdata);
-            $this->session->set_flashdata('msg', "Registered created successfully");
+            $this->session->set_flashdata('msg', "Account created successfully");
             redirect(base_url('user/register'));
         } 
         $this->load->view('register');
